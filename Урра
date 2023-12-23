@@ -83,3 +83,8 @@ def first_last(letter, st):
 def top3(st):
     ts = ([(st.count(i), i) for i in st if i != ' '])
     print(sorted(set(ts))[::-1][:3])
+
+# x и y координаты
+def xy(x, y):
+    z = (x, y)
+    print(z)
