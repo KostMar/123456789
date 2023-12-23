@@ -1,0 +1,85 @@
+Задания с первого листа
+a = [1, 3, 5, 7,9] 
+a.reverse() 
+print(a) 
+ 
+def change(input): 
+ input.reverse() 
+ print(input) 
+ 
+def to_list(input): 
+ print(set(input)) 
+ 
+def usles(input): 
+ M = max(input) 
+ n = len(input) 
+ u = M / n 
+  
+def list_sort(input): 
+ sorted(input) 
+ input.reverse() 
+ print(input)
+Задачи со второго листа:
+def to_float(num): 
+ num = float(num) 
+ print(num) 
+
+def avg_5(a, n, h, j): 
+ N = a + n + h + j 
+ L = N / 4 
+ print(round(L, 5)) 
+ 
+def mul_to_int(a, b): 
+ N = a * b 
+ print(round(N)) 
+ 
+def rad(V): 
+ r = ((3/4)*V/3.14)**(1/3) 
+ print(r)
+
+Задачи с третьего листа:
+def dislike_6(a):
+ if (a == 6):
+  print("только не 6!")
+ elif (a == 6.0):
+  print("только не 6!")
+ else:
+  print(True)     
+            
+def help_bool(letter):
+    if (letter == "а"):
+        print("свойство операций, позволяющее восстановить последовательность их выполнения при отсутствии явных указаний на очерёдность при равном приоритете")
+    elif (letter == "к"):
+        print("это один из базовых законов арифметики, который также называется коммутативным законом")
+    elif (letter == "м"):
+        print("Отрицание дизъюнкции двух простых высказываний равносильно конъюнкции отрицаний этих высказываний.")
+    elif (letter == "д"):
+        print("свойство согласованности двух бинарных операций, определённых на одном и том же множестве.")
+    else:
+        print("а=ассоциативность, к=комутативность, д=дистрибутивность, м=правило де моргана")
+Задания 4 листа:
+def to_dict(lst):
+    dic = {x: x for x, x in enumerate(lst, 1)}
+    print(dic)
+
+def biggest_dict(kw):
+    my_dict = {"first_one": "you can do it"}
+    Bmy_dict = {**my_dict, **kw}
+    print(Bmy_dict)
+
+Задания на 5 листке:
+def seach_substr(substr, str):
+        if substr.lower() in str.lower():
+            print('есть контакт')
+        else:
+            print('мимо')  
+                  
+def first_last(letter, st):
+    if letter in st:
+        print(st.index(letter), letter[0][-1])
+    else:
+        print(None, None)
+        
+def top3(st):
+    ts = ([(st.count(i), i) for i in st if i != ' '])
+    print(sorted(set(ts))[::-1][:3])
